@@ -10,10 +10,10 @@ export default async function Home({ params }) {
   return (
     <div className="m-4">
       <h1>Product</h1>
-      <p className="font-bold text-xl text-blue-800">{product.name}</p>
-      <p>{product.description}</p>
-      <p>{product.price} Baht</p>
-      <p>Category: {product.category.name}</p>
+      <p className="font-bold text-xl text-blue-800">{product?.name}</p>
+      <p>{product?.description}</p>
+      <p>{product?.price} Baht</p>
+      <p>Category: {product?.category.name}</p>
     </div>
   );
 }
